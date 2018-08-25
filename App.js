@@ -9,22 +9,29 @@ import {
   StatusBar
 } from 'react-native';
 import {
-  StackNavigator,
+  createStackNavigator,
 } from 'react-navigation';
 
 //import Splash_Screen from './Splash_Screen';
-import MainPage from './MainPage';
-//import MenuPage from './MenuPage';
-//import AboutPage from './About';
+import Screen1 from './Screen1';
+import Screen2 from './Screen2';
+import Screen3 from './Screen3';
+import Screen4User from './Screen4_User';
+import Screen4Host from './Screen4_Host';
+import Settings from './Screen5_Host';
 
-const App = StackNavigator(
+
+const App = createStackNavigator(
     {
         //InitScreen: { screen: Splash_Screen },
-        Home: { screen: MainPage },
-        //Menu: { screen: MenuPage },
-        //About: { screen: AboutPage },
+        ShareData: { screen: Screen1 },
+        SpotifyLogin: { screen: Screen2 },
+        Select: { screen: Screen3 },
+        UserConfirm: { screen: Screen4User },
+        HostManage: { screen: Screen4Host },
+        HostSettings: { screen: Settings },
     }, {
-        initialRouteName: "Menu" 
+        initialRouteName: "ShareData" 
     }
 );
 export default App;
