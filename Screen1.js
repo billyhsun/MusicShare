@@ -21,9 +21,9 @@ export default class Screen1 extends React.Component {
   render() {
     return (
       <View style = {styles.container}>
-        
         <Text style = {styles.text1}>Share Data?</Text>
         <Text style = {styles.text2}>Your location and Spotify account data</Text>
+        <Text style = {styles.text2}>will be seen by nearby Spotify hosts</Text>
         <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('UserConfirm')}>
             <Text style = {styles.text3}>Yes</Text>
         </TouchableOpacity>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   button: {
     width: Width,
     height: Height,
-    marginTop: 20,
+    marginTop: 50,
     backgroundColor: '#E6E6E6',
     borderRadius: 5,
     alignItems: 'center',
@@ -59,12 +59,12 @@ const styles = StyleSheet.create({
   },
   text1: {
     fontSize: 35,
+    marginBottom: 10,
     fontWeight: 'bold',
     color: '#FFFFFF',
   },
   text2: {
-    marginTop: 15,
-    marginBottom: 25,
+    marginTop: 10,
     fontSize: 20,
     color: '#FFFFFF',
   },

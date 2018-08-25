@@ -31,7 +31,7 @@ const App = createStackNavigator(
         HostMain: { screen: Screen4Host },
         HostSettings: { screen: Settings },
     }, {
-        initialRouteName: "HostSettings" 
+        initialRouteName: "Select" 
     }
 );
 export default App;

@@ -23,6 +23,7 @@ export default class Settings extends React.Component {
 
   save_settings() {
       this.props.navigation.navigate('HostMain');
+      // Get settings parameters
   }
 
   render() {
