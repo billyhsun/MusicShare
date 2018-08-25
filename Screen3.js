@@ -23,7 +23,7 @@ export default class Screen3 extends React.Component {
     return (
       <View style = {styles.container}>
         <Text style = {styles.text1}>Are you a host?</Text>
-        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('HostManage')}>
+        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('HostMain')}>
             <Text style = {styles.text2}>Yes</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('UserHome')}>
