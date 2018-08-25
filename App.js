@@ -24,14 +24,14 @@ import Settings from './Screen5_Host';
 const App = createStackNavigator(
     {
         //InitScreen: { screen: Splash_Screen },
-        ShareData: { screen: Screen1 },
         SpotifyLogin: { screen: Screen2 },
         Select: { screen: Screen3 },
+        UserHome: { screen: Screen1 },
         UserConfirm: { screen: Screen4User },
         HostManage: { screen: Screen4Host },
         HostSettings: { screen: Settings },
     }, {
-        initialRouteName: "ShareData" 
+        initialRouteName: "Select" 
     }
 );
 export default App;

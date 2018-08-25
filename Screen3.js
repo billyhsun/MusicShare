@@ -9,12 +9,6 @@ var barheight = Dimensions.get('window').height * 0.07;
 export default class Screen3 extends React.Component {
   static navigationOptions = {
       title: 'Select',
-      headerLeft: (
-        <Button
-          onPress={() => this.props.navigation.navigate('ShareData')}
-          title="Back"
-        />
-      ),
       headerStyle: {
           backgroundColor: '#F3F3F3',
           height: barheight,
@@ -29,13 +23,12 @@ export default class Screen3 extends React.Component {
     return (
       <View style = {styles.container}>
         <Text style = {styles.text1}>Are you a host?</Text>
-        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('UserConfirm')}>
+        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('HostManage')}>
             <Text style = {styles.text2}>Yes</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('HostManage')}>
+        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('UserHome')}>
             <Text style = {styles.text3}>No</Text>
         </TouchableOpacity>
-        
       </View>
     );
   }

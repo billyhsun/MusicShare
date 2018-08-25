@@ -6,15 +6,10 @@ var UserLoggedIn = 0;
 var titlelocation = Dimensions.get('window').width * 0.33;
 var barheight = Dimensions.get('window').height * 0.07;
 
+
 export default class Screen2 extends React.Component {
   static navigationOptions = {
       title: 'Login',
-      headerLeft: (
-        <Button
-          onPress={() => this.props.navigation.navigate('ShareData')}
-          title="Back"
-        />
-      ),
       headerStyle: {
           backgroundColor: '#F3F3F3',
           height: barheight,
@@ -32,6 +27,7 @@ export default class Screen2 extends React.Component {
       />
     );
   }
+  // ADD LOGIN AUTHENTICATION
 
   // If spotify log in status == 1,
   // UserLoggedIn = 1;

@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity, Button } from 'react-native';
+import { NavigationActions } from 'react-navigation';
 
 export default class Screen3 extends React.Component {
   render() {

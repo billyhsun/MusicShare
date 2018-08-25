@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity, Button, Image } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 
 var titlelocation = Dimensions.get('window').width * 0.33;
@@ -21,10 +21,11 @@ export default class Screen1 extends React.Component {
   render() {
     return (
       <View style = {styles.container}>
+        
         <Text style = {styles.text1}>Share Data?</Text>
         <Text style = {styles.text2}>Your location and Spotify account data</Text>
-        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('SpotifyLogin')}>
-            <Text style = {styles.text3}>OK</Text>
+        <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('UserConfirm')}>
+            <Text style = {styles.text3}>Yes</Text>
         </TouchableOpacity>
       </View>
     );
@@ -44,10 +45,17 @@ const styles = StyleSheet.create({
   button: {
     width: Width,
     height: Height,
+    marginTop: 20,
     backgroundColor: '#E6E6E6',
     borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  image: {
+    width: Dimensions.get('window').width * 0.5,
+    height: Dimensions.get('window').width * 0.5,
+    backgroundColor: '#FFFFFF',
+    marginBottom: 25,
   },
   text1: {
     fontSize: 35,
