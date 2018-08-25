@@ -7,9 +7,9 @@ var barheight = Dimensions.get('window').height * 0.07;
 var a = Dimensions.get('window').width * 0.30;
 var b = Dimensions.get('window').height * 0.12;
 
-var songs = [{'title':'God\'s Plan', 'artist':'Drake', 'album':'Scorpion', 'released':'Jan 2018', 'in_fav':34},
-             {'title':'Billie Jean', 'artist':'Michael Jackson', 'album':'Thriller', 'released':'Jan 1983', 'in_fav':21},
-             {},
+var songs = [{'title':'God\'s Plan', 'artist':'Drake', 'album':'Scorpion', 'released':'01-2018', 'in_fav':34},
+             {'title':'Billie Jean', 'artist':'Michael Jackson', 'album':'Thriller', 'released':'01-1983', 'in_fav':21},
+             {'title':'Nice for What', 'artist':'Drake', 'album':'Scorpion', 'released':'04-2018', 'in_fav':34},
              {},
              {},];
 
