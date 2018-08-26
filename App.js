@@ -31,7 +31,7 @@ const App = createStackNavigator(
         HostMain: { screen: Screen4Host },
         HostSettings: { screen: Settings },
     }, {
-        initialRouteName: "Select" 
+        initialRouteName: "SpotifyLogin" 
     }
 );
 export default App;

@@ -2,16 +2,35 @@ import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Dimensions, Image, TouchableOpacity, Button, TextInput } from 'react-native';
 import DropdownMenu from 'react-native-dropdown-menu';
 
+
 var titlelocation = Dimensions.get('window').width * 0.33;
 var barheight = Dimensions.get('window').height * 0.07;
 var a = Dimensions.get('window').width * 0.30;
 var b = Dimensions.get('window').height * 0.12;
 
-var songs = [{'title':'God\'s Plan', 'artist':'Drake', 'album':'Scorpion', 'released':'01-2018', 'in_fav':34},
+var users_in_range = [{}, {}];
+
+// Get the top 5 songs
+
+function getMoviesFromApiAsync() {
+  return fetch('https://limitless-basin-60883.herokuapp.com/users')
+    .then((response) => response.json())
+    .then((responseJson) => {
+      return responseJson;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+var songdata = getMoviesFromApiAsync();
+
+
+var songs = [{'title':'Nice for What', 'artist':'Drake', 'album':'Scorpion', 'released':'04-2018', 'in_fav':45},
+             {'title':'Pyscho', 'artist':'Post Malone ft. TY Dolla $ign', 'album':'Beerbongs & Bentleys', 'released':'04-2018', 'in_fav':42},
+             {'title':'God\'s Plan', 'artist':'Drake', 'album':'Scorpion', 'released':'01-2018', 'in_fav':34},
              {'title':'Billie Jean', 'artist':'Michael Jackson', 'album':'Thriller', 'released':'01-1983', 'in_fav':21},
-             {'title':'Nice for What', 'artist':'Drake', 'album':'Scorpion', 'released':'04-2018', 'in_fav':34},
-             {},
-             {},];
+             {'title':'Gangnam Style', 'artist':'Psy', 'album':'Psy 6 (Six Rules), Part 1', 'released':'07-2012', 'in_fav':14},];
 
 export default class Screen3 extends React.Component {
   static navigationOptions = {
