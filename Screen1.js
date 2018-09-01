@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Dimensions, TouchableOpacity, Button, Image } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-//import { getLocation, arePointsNear } from './Geolocation.js';
+
 
 var titlelocation = Dimensions.get('window').width * 0.33;
 var barheight = Dimensions.get('window').height * 0.07;
@@ -16,14 +16,13 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    const coordinates = [position.coords.latitude, position.coords.longitude];
+    coordinates = [position.coords.latitude, position.coords.longitude];
     return coordinates;
 }
 
 // checkPoint is the spotify user
 // centerPoint is the spotify host
 function arePointsNear(checkPoint, centerPoint, km) {
-  
     var ky = 40000 / 360;
     var kx = Math.cos(Math.PI * centerPoint.lat / 180.0) * ky;
     var dx = Math.abs(centerPoint.lng - checkPoint[1]) * kx;
