@@ -1,26 +1,26 @@
 ## SurroundSound
 
-# Inspiration
+### Inspiration
 What inspired the beginning of the idea was terrible gym music and the thought of a automatic music selection based on the tastes of people in the vicinity. Our end goal is to sell a hosting service to play music that people in a local area would want to listen to.
 
-# What it does
+### What it does
 The app has two parts. A client side connects to Spotify and allows our app to collect users' tokens, userID, email and the top played songs. These values are placed inside a Mongoose database and the userID and top songs are the main values needed. The host side can control the location and the radius they want to cover. This allows the server to be populated with nearby users and their top songs are added to the host accounts playlist. The songs most commonly added to the playlist have a higher chance of being played.
 
 This app could be used at parties to avoid issues discussing songs, retail stores to play songs that cater to specific groups, weddings or all kinds of social events. Inherently, creating an automatic DJ to cater to the tastes of people around an area.
 
-# How we built it
+### How we built it
 We began by planning and fleshing out the app idea then from there the tasks were split into four sections: location, front end, Spotify and database. At this point we decided to use React-Native for the mobile app and NodeJS for the backend was set into place. After getting started the help of the mentors and the sponsors were crucial, they showed us all the many different JS libraries and api's available to make life easier. Programming in Full Stack MERN was a first for everyone in this team. We all hoped to learn something new and create an something cool.
 
-#Challenges we ran into
+### Challenges we ran into
 We ran into plenty of problems. We experienced many syntax errors and plenty of bugs. At the same time dependencies such as Compatibility concerns between the different APIs and libraries had to be maintained, along with the general stress of completing on time. In the end We are happy with the product that we made.
 
-#Accomplishments that we are proud of
+### Accomplishments that we are proud of
 Learning something we were not familiar with and being able to make it this far into our project is a feat we are proud of. .
 
-#What we learned
+### What we learned
 Learning about the minutia about Javascript development was fun. It was because of the mentors assistance that we were able to resolve problems and develop at a efficiently so we can finish. The versatility of Javascript was surprising, the ways that it is able to interact with and the immense catalog of open source projects was staggering. We definitely learned plenty... now we just need a good sleep.
 
-#What's next for SurroundSound
+### What's next for SurroundSound
 We hope to add more features and see this application to its full potential. We would make it as autonomous as possible with seamless location based switching and database logging. Being able to collect proper user information would be a benefit for businesses. There were features that did not make it into the final product, such as voting for the next song on the client side and the ability for both client and host to see the playlist. The host would have more granular control such as allowing explicit songs, specifying genres and anything that is accessible by the Spotify API. While the client side can be gamified to keep the GPS scanning enabled on their devices, such as collecting points for visiting more areas.
 
 
