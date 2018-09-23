@@ -1,14 +1,14 @@
 ## SurroundSound
 
-#Inspiration
+# Inspiration
 What inspired the beginning of the idea was terrible gym music and the thought of a automatic music selection based on the tastes of people in the vicinity. Our end goal is to sell a hosting service to play music that people in a local area would want to listen to.
 
-#What it does
+# What it does
 The app has two parts. A client side connects to Spotify and allows our app to collect users' tokens, userID, email and the top played songs. These values are placed inside a Mongoose database and the userID and top songs are the main values needed. The host side can control the location and the radius they want to cover. This allows the server to be populated with nearby users and their top songs are added to the host accounts playlist. The songs most commonly added to the playlist have a higher chance of being played.
 
 This app could be used at parties to avoid issues discussing songs, retail stores to play songs that cater to specific groups, weddings or all kinds of social events. Inherently, creating an automatic DJ to cater to the tastes of people around an area.
 
-#How we built it
+# How we built it
 We began by planning and fleshing out the app idea then from there the tasks were split into four sections: location, front end, Spotify and database. At this point we decided to use React-Native for the mobile app and NodeJS for the backend was set into place. After getting started the help of the mentors and the sponsors were crucial, they showed us all the many different JS libraries and api's available to make life easier. Programming in Full Stack MERN was a first for everyone in this team. We all hoped to learn something new and create an something cool.
 
 #Challenges we ran into
