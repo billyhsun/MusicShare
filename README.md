@@ -23,6 +23,32 @@ Learning about the minutia about Javascript development was fun. It was because 
 ### What's next for SurroundSound
 We hope to add more features and see this application to its full potential. We would make it as autonomous as possible with seamless location based switching and database logging. Being able to collect proper user information would be a benefit for businesses. There were features that did not make it into the final product, such as voting for the next song on the client side and the ability for both client and host to see the playlist. The host would have more granular control such as allowing explicit songs, specifying genres and anything that is accessible by the Spotify API. While the client side can be gamified to keep the GPS scanning enabled on their devices, such as collecting points for visiting more areas.
 
+### Screenshots
+
+#### Spotify Login
+<img src="/Screenshots/1.jpg" width="300">
+
+#### Spotify authentication for sharing data
+<img src="/Screenshots/2.jpg" width="300">
+
+#### Host confirmation
+<img src="/Screenshots/3.jpg" width="300">
+
+#### Confirm share data (for customers)
+<img src="/Screenshots/4.jpg" width="300">
+
+#### Final page (for customers)
+<img src="/Screenshots/5.jpg" width="300">
+
+#### Playlist management (for hosts)
+<img src="/Screenshots/6.jpg" width="300">
+
+#### Playlist management with dropdown menu (for hosts)
+<img src="/Screenshots/7.jpg" width="300">
+
+#### Settings (for hosts)
+<img src="/Screenshots/8.jpg" width="300">
+
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
