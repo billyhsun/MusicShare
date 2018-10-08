@@ -26,28 +26,28 @@ We hope to add more features and see this application to its full potential. We 
 ### Screenshots
 
 #### Spotify Login
-<img src="/Screenshots/1.jpg" width="300">
+<img src="/Screenshots/1.jpg" width="600">
 
 #### Spotify authentication for sharing data
-<img src="/Screenshots/2.jpg" width="300">
+<img src="/Screenshots/2.jpg" width="600">
 
 #### Host confirmation
-<img src="/Screenshots/3.jpg" width="300">
+<img src="/Screenshots/3.jpg" width="600">
 
 #### Confirm share data (for customers)
-<img src="/Screenshots/4.jpg" width="300">
+<img src="/Screenshots/4.jpg" width="600">
 
 #### Final page (for customers)
-<img src="/Screenshots/5.jpg" width="300">
+<img src="/Screenshots/5.jpg" width="600">
 
 #### Playlist management (for hosts)
-<img src="/Screenshots/6.jpg" width="300">
+<img src="/Screenshots/6.jpg" width="600">
 
 #### Playlist management with dropdown menu (for hosts)
-<img src="/Screenshots/7.jpg" width="300">
+<img src="/Screenshots/7.jpg" width="600">
 
 #### Settings (for hosts)
-<img src="/Screenshots/8.jpg" width="300">
+<img src="/Screenshots/8.jpg" width="600">
 
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
